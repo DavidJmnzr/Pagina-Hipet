@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cartilla para tu mascota online</title>
+    <% include barra/head.html %>
+</head>
+
+<body>
+    <% include barra/navegacion.html %>
+
+    <form class="formatoregistro animated bounceInUp" >
+        <fieldset >
+            <legend>Registro para cuenta</legend>
+
+            <div class="form-group">
+                <label>Direccion de correo electronico</label>
+
+                <input type="email" class="form-control" id="correoElectronico" aria-describedby="emailHelp"
+                    placeholder="Ingrese correo electronico">
+                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie
+                    más.</small>
+            </div>
+
+            <div class="form-group">
+                <label>Contraseña</label>
+                <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
+            </div>
+
+            <legend>Datos del propietario</legend>
+
+            <label>Nombre</label>
+            <input type="text" class="form-control" id="" a placeholder="Nombre">
+            <label>Calle</label>
+            <input type="text" class="form-control" id="" a placeholder="Calle">
+            <label>Colonia</label>
+            <input type="text" class="form-control" id="" a placeholder="Colonia">
+            <label>Ciudad</label>
+            <input type="text" class="form-control" id="" a placeholder="Ciudad">
+            <label>Estado</label>
+            <input type="text" class="form-control" id="" a placeholder="Estado">
+            <label>Pais</label>
+            <input type="text" class="form-control" id="" a placeholder="Pais">
+            <label>telefono</label>
+            <input type="number" class="form-control" id="" a placeholder="Telefono">
+
+            <legend>Datos de la mascota</legend>
+
+            <label>Nombre</label>
+            <input type="text" class="form-control" id="" a placeholder="">
+            <label>Raza</label>
+            <input type="text" class="form-control" id="" a placeholder="">
+            <label>Señas particulares</label>
+            <input type="text" class="form-control" id="" a placeholder="">
+            <label>Tatuaje/Microchip</label>
+            <input type="text" class="form-control" id="" a placeholder="">
+            <label>Fecha de nacimiento</label>
+            <input type="date" class="form-control" id="" a placeholder="">
+            <label>Color</label>
+            <input type="color" class="form-control" id="" a placeholder="">
+            <label>Peso</label>
+            <input type="text" class="form-control" id="" a placeholder="">
+
+            <div class="form-group">
+                <legend>Foto de la mastota</legend>
+                <input type="file" class="form-control-file" id="fotoMascota" aria-describedby="fileHelp">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </fieldset>
+    </form>
+
+    <% include barra/pie.html %>
+</body>
+
+</html>
